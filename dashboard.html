@@ -1,0 +1,61 @@
+
+<html lang="en"> 
+	<head>
+		<title>dash board</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.10.1/bootstrap-social.css" rel="stylesheet" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="header"></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 text-center">
+					<!-- get pictrue from db -->
+					<img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
+              display:block; margin:auto;" src="pictures/dodge.jpg" width="140" height="140">
+          		</div>
+          		<!-- get user info from db -->
+          		<div class="col-md-4">
+          			<h2> User Name </h2>
+
+					<div class="stars"> 
+						<span class="star on"></span>
+						<span class="star on"></span>
+						<span class="star on"></span>
+						<span class="star half"></span>
+						<span class="star"></span>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="footer"></footer>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.header').load("nav_bar_guest.html");
+				$('.footer').load("footer.html");
+			});
+		</script>
+
+	</body>
+	
+</html>
